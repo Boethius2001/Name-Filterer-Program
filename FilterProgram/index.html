@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Filterer</title>
+
+    <style>
+        button{
+            font-size: 30px;
+            padding: 10px;
+            border: solid black;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+        ul{
+            list-style: none;
+        }
+        
+        .title{
+            text-align: center;
+        }
+        .Options{
+            font-size: 2em;
+            margin: 20px;
+            float: left;
+            border: 5px solid black;
+            padding: 20px;
+            height: 900px;
+
+        }
+        .TextArea{
+            text-align: center;
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class = "title">
+        <h1>Name Filterer</h1>
+        <hr>
+    </div>
+
+
+    <div class="Options">
+
+        <h3>Filter</h3>
+
+        <input type="checkbox" id="CountryBox">
+        <label>Countries</label><br>
+
+        <input type="checkbox" id="AnimalBox">
+        <label>Animals</label><br>
+
+        <input type="checkbox" id="BookBox">
+        <label>Books</label><br>
+
+        <input type="checkbox" id="GameBox">
+        <label>Games</label><br><br>
+        <button onclick="GetInput()">Refresh</button>
+    </div>
+
+    <div class="TextArea">
+        <ul id="TextList">
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
